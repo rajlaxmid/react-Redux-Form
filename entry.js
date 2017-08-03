@@ -12,6 +12,7 @@ import { createLogger } from 'redux-logger';
 
 import App from './App.js';
 import Home from './src/Home';
+import ValidationReduxForm from './src/ValidationReduxForm';
 
 
 import allReducers from './src/store/reducers';
@@ -28,6 +29,8 @@ ReactDOM.render((
     <Router history={hashHistory}>
       <Route path="/" component={App}>
         <Route path="home" component={Home}/>
+        <Route path="validationform" component={ValidationReduxForm}/>
+
       </Route>
     </Router>
   </Provider>

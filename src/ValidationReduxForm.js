@@ -1,14 +1,10 @@
 import React from 'react';
 
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-//import { testme } from './store/actions';
-
-import ContactForm from './ContactForm';
+import UserForm from './UserForm';
 import Menu from './Menu';
 
 
-class Home extends React.Component {
+class ValidationReduxForm extends React.Component {
 
     constructor(props){
         super(props);
@@ -25,11 +21,11 @@ class Home extends React.Component {
       return (
       	<div>
             <Menu /><br />
-            <h3>Redux-Form: Simple form Example (No Validation)</h3>
-            <ContactForm onSubmit={this.submit} />
+            <h3>Redux-Form: With Validation Example</h3>
+            <UserForm onSubmit={this.submit} />
         </div> 
       );
     }
 }
 
-export default Home;
+export default ValidationReduxForm;

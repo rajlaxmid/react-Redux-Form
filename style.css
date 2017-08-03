@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	padding: 0; 
+}
+.nav-menu{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background: #555;
+}
+.nav-menu > li{
+	display: inline-block;
+    padding: 5px 15px;
+    border-right: 1px solid #cdcdcd;
+}
+.nav-menu > li > a{
+	text-decoration: none;
+	color: #efefef;
+}
